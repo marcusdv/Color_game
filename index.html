@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>O Grande Jogo </h1>
+        <h1><span id="cor-escolhida"></span></h1>
+        <h1 id="pontuacaoH1"></h1>
+        <div class="botoes">
+            <button id="dificuldade-facil">Fácil</button>
+            <button id="dificuldade-dificil">Difícil</button>
+            <button id="dificuldade-oohshit">OOHSHIT</button>
+        </div>
+    </div>
+    <div id="container">
+        <div>
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>
+        </div>
+        <div id="quadrados-no-dificil" class="invisivel">
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>
+        </div>
+        <div id="quadrados-no-oohshit" class="invisivel">
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>
+            <div class="quadrado"></div>
+        </div>
+
+    </div>
+
+    <script src="logica.js">
+    </script>
+</body>
+</html>
