@@ -56,6 +56,21 @@ button:active {
     
 }
 
+.area-de-pontuacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.area-de-pontuacao p {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1px #232323;
+}
+
 .invisivel {
     display: none;
 }

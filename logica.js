@@ -5,6 +5,7 @@ var container = document.getElementById("container")
 var pontuacaoh1 = document.getElementById("pontuacaoH1")
 var quadradoNoDificil = document.getElementById("quadrados-no-dificil")
 var nav = document.getElementById("nav")
+var facePalm = document.querySelectorAll(".face-palm")
 var quadradoNoOohShit = document.getElementById("quadrados-no-oohshit")
 var ArrayDeCores = []
 var indexDaCorCorreta
@@ -84,7 +85,13 @@ function pontuar(){
     else if (dificuldadeDoJogo === "dificil")
         pontuacao += 3
     else if (dificuldadeDoJogo === "oohshit")
-        pontuacao += 5   
+        pontuacao += 5  
+        
+    if (pontuacao >= 0) {
+        for(var x = 0; x < facePalm.length; x++){
+            facePalm[x].classList.add("invisivel")
+        }
+    } 
 }
 
 function despontuar(){
@@ -94,4 +101,10 @@ function despontuar(){
         pontuacao -= 1
     else if (dificuldadeDoJogo === "oohshit")
         pontuacao -= 2   
+
+    if (pontuacao < 0) {
+        for(var x = 0; x < facePalm.length; x++){
+            facePalm[x].classList.remove("invisivel")
+        }
+    }
 }
