@@ -34,7 +34,7 @@ h1 span {
     font-size: 2em;
 }
 
-.botoes {
+.div-botoes {
     text-align: center;
     background-color: white;
 }
@@ -46,14 +46,8 @@ button {
     padding:0.6rem 1rem;
     cursor: pointer;
     background-color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     outline: none;
-}
-
-button:active {
-    background-color: white;
-    color: #4a6aa5;
-    
 }
 
 .area-de-pontuacao {
@@ -67,6 +61,7 @@ button:active {
 
 .area-de-pontuacao p {
     color: white;
+    margin: 0 0 30px 0;
     font-size: 2.5rem;
     text-shadow: 1px 1px 1px #232323;
 }
